@@ -71,7 +71,7 @@ const Login = () => {
             <button type="submit" disabled={isSubmitting}>
               Iniciar Sesión
             </button>
-            <button>
+            <button type='button'>
               <Link to="/register" className= {styles["link"]}>Registrarse</Link>
             </button>
             </Form>

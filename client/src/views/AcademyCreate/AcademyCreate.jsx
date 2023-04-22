@@ -6,7 +6,8 @@ import * as Yup from 'yup';
 import './CreateStyles.css';
 
 const AcademyCreate = (props) => {
-    const {academias, setAcademias} = props;
+    //const {academias, setAcademias} = props;
+    const [academias, setAcademias] = useState();
     const [errors, setErrors] = useState({});
     const navigate = useNavigate();
 
@@ -41,7 +42,7 @@ const AcademyCreate = (props) => {
                         setErrors(res.data.errors);
                     } else {
                         setAcademias(academias, res.data);
-                        navigate('/academias/:id');
+                        navigate('/academias');
                     }
                 })
                 .catch(err => console.log(err));
