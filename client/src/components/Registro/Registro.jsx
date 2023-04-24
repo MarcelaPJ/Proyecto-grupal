@@ -52,6 +52,7 @@ const Registro = () => {
         <div className={styles["fondo"]}>
                 <h1 className={styles['h1']}>Registro</h1>
                 <form onSubmit={formik.handleSubmit} className={styles["form"]}>
+                <h2>Registro</h2>
                     <div>
                         <label htmlFor="name">Nombre:</label>
                         <br/>

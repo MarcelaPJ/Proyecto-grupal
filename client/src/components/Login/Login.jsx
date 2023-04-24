@@ -57,6 +57,7 @@ const Login = () => {
         >
             {({ isSubmitting }) => (
             <Form className={styles["form"]}>
+              <h1>Login</h1><br/>
              <div>
                 <label htmlFor="email">Email:</label>
                 <Field type="email" id="email" name="email" className={styles["field"]}/>
